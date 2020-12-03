@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片弹窗</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+
+<body>
+
+    <!-- 触发弹窗 - 图片为本地的的图片地址 -->
+    <img id="myImg" src="img/1.jpg" alt="炸裂得分王-詹姆斯.哈登" width="300" height="200">
+
+    <!-- 弹窗 -->
+    <div id="myModal" class="modal">
+
+        <!-- 关闭按钮,&times这个是叉号 -->
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+        <!-- 弹窗内容 -->
+        <img class="modal-content" id="img01">
+
+        <!-- 文本描述 -->
+        <div id="caption"></div>
+    </div>
+
+    <script src="1.js"></script>
+</body>
+
+</html>
